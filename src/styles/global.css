@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+	font-family: Poppins, Helvetica, Arial, Lucida, sans-serif;
+}
+
+html {
+	background-color: #f9f9f9;
+}
+
+body::-webkit-scrollbar {
+	display: none;
+}
+
+@layer components {
+	.nav-list-items {
+		@apply p-2 border-b-4 border-transparent hover:border-red-500 duration-200;
+	}
+	.activeLink {
+		@apply border-red-500;
+	}
+	.heading {
+		@apply text-left text-3xl my-3 py-2 font-semibold border-b-2 border-gray-200;
+	}
+	.subHeading {
+		@apply text-left text-lg my-3 py-2 font-semibold border-b-2 border-gray-200;
+	}
+	.th-table,
+	.td-table {
+		@apply border border-collapse border-gray-400 p-2;
+	}
+}
