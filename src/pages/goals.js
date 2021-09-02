@@ -1,5 +1,6 @@
 import React from 'react'
 import Layout from '../components/layout'
+import { Helmet } from 'react-helmet'
 
 const GoalsPage = () => {
 	const data = {
@@ -53,6 +54,11 @@ const GoalsPage = () => {
 
 	return (
 		<Layout>
+			<Helmet>
+				<meta charSet='utf-8' />
+				<title>IQAC Goals</title>
+				<link rel='canonical' href='' />
+			</Helmet>
 			<h1 className='heading'>IQAC Goals</h1>
 			<p>
 				To develop a quality system for conscious, consistent and catalytic

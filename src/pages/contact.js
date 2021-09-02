@@ -1,9 +1,15 @@
 import React from 'react'
 import Layout from '../components/layout'
+import { Helmet } from 'react-helmet'
 
 const ContactPage = () => {
 	return (
 		<Layout>
+			<Helmet>
+				<meta charSet='utf-8' />
+				<title>IQAC Contact</title>
+				<link rel='canonical' href='' />
+			</Helmet>
 			<h1 className='heading'>IQAC Contact</h1>
 			<strong>Director</strong>
 			<br />

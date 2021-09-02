@@ -1,5 +1,6 @@
 import React from 'react'
 import Layout from '../components/layout'
+import { Helmet } from 'react-helmet'
 
 const ReportsPage = () => {
 	const data = {
@@ -32,6 +33,11 @@ const ReportsPage = () => {
 	}
 	return (
 		<Layout>
+			<Helmet>
+				<meta charSet='utf-8' />
+				<title>IQAC Reports</title>
+				<link rel='canonical' href='' />
+			</Helmet>
 			<h1 className='heading'>IQAC Reports</h1>
 			<ul>
 				{data.reports.map(item => (

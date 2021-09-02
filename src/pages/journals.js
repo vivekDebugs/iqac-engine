@@ -1,5 +1,6 @@
 import React from 'react'
 import Layout from '../components/layout'
+import { Helmet } from 'react-helmet'
 
 const JournalsPage = () => {
 	const data = {
@@ -15,6 +16,11 @@ const JournalsPage = () => {
 	}
 	return (
 		<Layout>
+			<Helmet>
+				<meta charSet='utf-8' />
+				<title>UGC Journals</title>
+				<link rel='canonical' href='' />
+			</Helmet>
 			<h1 className='heading'>UGC Journals</h1>
 			<h2 className='subHeading'>Application processed for following states</h2>
 			<ul>
